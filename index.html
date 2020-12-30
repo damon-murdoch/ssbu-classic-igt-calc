@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			SSBU Classic Mode Ingame Time Calculator
+		</title>
+		
+		<!-- Bootstrap External CSS File -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		
+		<!-- JQuery Source Code -->
+		<script type='text/javascript' src='js/jquery.min.js'>
+		</script>
+		
+		<!-- Bootstrap JavaScript Source Code -->
+		<script type='text/javascript' src='js/bootstrap.min.js'>
+		</script>
+		
+		<!-- Calculator Function Library Source Code -->
+		<script type='text/javascript' src='index.js'>
+		</script>
+	</head>
+	<body>
+		<div class='text-center'>
+			<p class='h1'>
+				Super Smash Brothers Ultimate
+			</p>
+			<p class='h2 text-muted'>
+				Classic Mode Ingame Time Calculator
+			</p>
+			<p class='h4 text-muted'>
+				Made by 
+				<a href='https://twitter.com/SirScrubbington'>
+					@SirScrubbington
+				</a>
+			</p>
+		</div>
+		<div class='px-5 py-2 mx-auto'>
+			<table id='total-igt' class='table table-bordered'>
+				<thead class='thead-dark'>
+					<tr>
+						<th colspan='3'>
+							Total Ingame Time
+						</th>
+					</tr>
+					<tr>
+						<th colspan='3'>
+							<!-- When clicked, triggers the copy event listener -->
+							<button id='clipboard' type='button' class='btn btn-success'>
+								Copy to Clipboard
+							</button>
+						</th>
+					</tr>
+					<tr>
+						<th> Minutes </th>
+						<th> Seconds </th>
+						<th> 1/100 </th>
+					</tr>
+					<tr>
+						<td id='total-min'> 0 </td>
+						<td id='total-sec'> 0 </td>
+						<td id='total-ms'> 0 </td>
+					</tr>
+				</thead>
+			</table>
+			<table id='bonus-timer' class='table table-bordered'>
+				<thead class='thead-dark'>
+					<tr>
+						<th colspan='3'>
+							Bonus Timer
+						</th>
+					</tr>
+					<tr>
+						<th> Minutes </th>
+						<th> Seconds </th>
+						<th> 1/100 </th>
+					</tr>
+					<tr>
+						<td>
+							<form class='form-group'>
+								<input type='number' class='form-control' id='bonus-min' value=0 min=0 onChange='updateIngameTime()'>
+							</form>
+						</td>
+						<td>
+							<form class='form-group'>
+								<input type='number' class='form-control' id='bonus-sec' value=0 min=0 onChange='updateIngameTime()'>
+							</form>
+						</td>
+						<td>
+							<form class='form-group'>
+								<input type='number' class='form-control' id='bonus-ms' value=0 min=0 onChange='updateIngameTime()'>
+							</form>
+						</td>
+					</tr>
+				</thead>
+			</table>
+			<table id='game-timer' class='table table-bordered'>
+				<thead class='thead-dark'>
+					<tr>
+						<th colspan='4'>
+							Game Timer
+						</th>
+					</tr>
+					<tr>
+						<th> Minutes </th>
+						<th> Seconds </th>
+						<th> 1/100 </th>
+						<th>
+							<button type='button' class='btn btn-success' onclick='addGameTimer()'>
+								Add New
+							</button>
+						</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+	</body>
+</html>
