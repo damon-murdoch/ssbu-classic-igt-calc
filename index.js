@@ -214,4 +214,7 @@ $(document).ready(function(){
 			console.error('Clipboard interaction not supported by browser.');
 		}
 	});
+	
+	// Add an initial game timer object to the page
+	addGameTimer();
 });
