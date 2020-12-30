@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		
 		<title>
 			SSBU Classic Mode Ingame Time Calculator
 		</title>
@@ -22,6 +23,7 @@
 		</script>
 	</head>
 	<body>
+		<!-- Titlecard -->
 		<div class='text-center'>
 			<p class='h1'>
 				Super Smash Brothers Ultimate
@@ -46,7 +48,9 @@
 				</a>
 			</p>
 		</div>
+		<!-- Main body containing tables -->
 		<div class='px-5 py-2 mx-auto'>
+			<!-- Total Ingame Time Table -->
 			<table id='total-igt' class='table table-bordered'>
 				<thead class='thead-dark'>
 					<tr>
@@ -63,17 +67,30 @@
 						</th>
 					</tr>
 					<tr>
-						<th> Minutes </th>
-						<th> Seconds </th>
-						<th> 1/100 </th>
+						<th> 
+							Minutes 
+						</th>
+						<th> 
+							Seconds 
+						</th>
+						<th> 
+							1/100 
+						</th>
 					</tr>
 					<tr>
-						<td id='total-min'> 0 </td>
-						<td id='total-sec'> 0 </td>
-						<td id='total-ms'> 0 </td>
+						<td id='total-min'> 
+							0
+						</td>
+						<td id='total-sec'>
+							0
+						</td>
+						<td id='total-ms'>
+							0
+						</td>
 					</tr>
 				</thead>
 			</table>
+			<!-- Bonus Timer Table -->
 			<table id='bonus-timer' class='table table-bordered'>
 				<thead class='thead-dark'>
 					<tr>
@@ -82,9 +99,15 @@
 						</th>
 					</tr>
 					<tr>
-						<th> Minutes </th>
-						<th> Seconds </th>
-						<th> 1/100 </th>
+						<th> 
+							Minutes 
+						</th>
+						<th> 
+							Seconds 
+						</th>
+						<th> 
+							1/100 
+						</th>
 					</tr>
 					<tr>
 						<td>
@@ -105,6 +128,7 @@
 					</tr>
 				</thead>
 			</table>
+			<!-- Game Timer Table -->
 			<table id='game-timer' class='table table-bordered'>
 				<thead class='thead-dark'>
 					<tr>
@@ -113,9 +137,15 @@
 						</th>
 					</tr>
 					<tr>
-						<th> Minutes </th>
-						<th> Seconds </th>
-						<th> 1/100 </th>
+						<th>
+							Minutes
+						</th>
+						<th>
+							Seconds
+						</th>
+						<th>
+							1/100
+						</th>
 						<th>
 							<button type='button' class='btn btn-success' onclick='addGameTimer()'>
 								Add New

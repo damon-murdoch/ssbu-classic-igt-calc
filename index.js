@@ -215,6 +215,14 @@ $(document).ready(function(){
 		}
 	});
 	
-	// Add an initial game timer object to the page
-	addGameTimer();
+	// Program initially starts with 7 game timer rows,
+	// as 7 is the minimum number of rounds you can have
+	// in a classic mode set.
+	
+	// Loop over 7 times
+	for(let i=0; i<7; i++)
+	{
+		// Add an initial game timer object to the page
+		addGameTimer();
+	}
 });
