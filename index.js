@@ -153,7 +153,7 @@ function updateIngameTime()
 		
 		table.push(Math.floor(base / 60));
 		table.push(Math.floor(base % 60));
-		table.push(Math.floor(100 * (base % 1)));
+		table.push(Math.round(1000 * (base % 1)));
 
 		// Return the table to the calling process
 		return table;
